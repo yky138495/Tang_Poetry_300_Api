@@ -3,7 +3,6 @@ package main
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	"github.com/beego/admin"
 	"github.com/astaxie/beego/plugins/cors"
 	_ "github.com/mattn/go-sqlite3"
 	"time"

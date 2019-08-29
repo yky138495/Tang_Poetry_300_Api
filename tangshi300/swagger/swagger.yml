@@ -1,0 +1,163 @@
+swagger: "2.0"
+info:
+  title: beego Test API
+  description: beego has a very cool tools to autogenerate documents for your API
+  version: 1.0.0
+  termsOfService: http://beego.me/
+  contact:
+    email: astaxie@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+basePath: /v1
+paths:
+  /tangshi/:
+    get:
+      tags:
+      - tangshi
+      description: get Tangshi300
+      operationId: Tangshi300Controller.Get All
+      parameters:
+      - in: query
+        name: query
+        description: Filter. e.g. col1:v1,col2:v2 ...
+        type: string
+      - in: query
+        name: fields
+        description: Fields returned. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: sortby
+        description: Sorted-by fields. e.g. col1,col2 ...
+        type: string
+      - in: query
+        name: order
+        description: Order corresponding to each sortby field, if single value, apply
+          to all sortby fields. e.g. desc,asc ...
+        type: string
+      - in: query
+        name: limit
+        description: Limit the size of result set. Must be an integer
+        type: string
+      - in: query
+        name: offset
+        description: Start position of result set. Must be an integer
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Tangshi300'
+        "403":
+          description: ""
+    post:
+      tags:
+      - tangshi
+      description: create Tangshi300
+      operationId: Tangshi300Controller.Post
+      parameters:
+      - in: body
+        name: body
+        description: body for Tangshi300 content
+        required: true
+        schema:
+          $ref: '#/definitions/models.Tangshi300'
+      responses:
+        "201":
+          description: '{int} models.Tangshi300'
+        "403":
+          description: body is empty
+  /tangshi/{id}:
+    get:
+      tags:
+      - tangshi
+      description: get Tangshi300 by id
+      operationId: Tangshi300Controller.Get One
+      parameters:
+      - in: path
+        name: id
+        description: The key for staticblock
+        required: true
+        type: string
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Tangshi300'
+        "403":
+          description: :id is empty
+    put:
+      tags:
+      - tangshi
+      description: update the Tangshi300
+      operationId: Tangshi300Controller.Put
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to update
+        required: true
+        type: string
+      - in: body
+        name: body
+        description: body for Tangshi300 content
+        required: true
+        schema:
+          $ref: '#/definitions/models.Tangshi300'
+      responses:
+        "200":
+          description: ""
+          schema:
+            $ref: '#/definitions/models.Tangshi300'
+        "403":
+          description: :id is not int
+    delete:
+      tags:
+      - tangshi
+      description: delete the Tangshi300
+      operationId: Tangshi300Controller.Delete
+      parameters:
+      - in: path
+        name: id
+        description: The id you want to delete
+        required: true
+        type: string
+      responses:
+        "200":
+          description: '{string} delete success!'
+        "403":
+          description: id is empty
+definitions:
+  models.Tangshi300:
+    title: Tangshi300
+    type: object
+    properties:
+      AuthDetail:
+        type: string
+      Author:
+        type: string
+      Beijing:
+        type: string
+      BookID:
+        type: string
+      Chaodai:
+        type: string
+      Dianping:
+        type: string
+      Fanyi:
+        type: string
+      Id:
+        type: integer
+        format: int64
+      Shangxi:
+        type: string
+      Title:
+        type: string
+      Yuanwen:
+        type: string
+  models.Upsystem:
+    title: Upsystem
+    type: object
+tags:
+- name: tangshi
+  description: |
+    Tangshi300Controller operations for Tangshi300

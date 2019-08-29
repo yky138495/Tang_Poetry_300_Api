@@ -1,6 +1,6 @@
-# go_sqllite_learn
+# Tang_Poetry_300_Api
 
-go sqllite数据库学习
+唐诗300首+API，基于beego实现的Restful api
 
 ## go 环境安装
 ```
@@ -29,7 +29,7 @@ vi ~/.bash_profile
 export GOPATH=/usr/local/Cellar/go/1.12.4
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
-export BeeBIN=/Users/yangmengge/go/bin
+export BeeBIN=/Users/***/go/bin
 export PATH=$PATH:$BeeBIN
 ```
 
@@ -48,7 +48,7 @@ eg：新建一个main.go文件
 package main
 import ("fmt")
 func main() {
-    fmt.Println("hello world!")
+fmt.Println("hello world!")
 }
 ```
 
@@ -126,9 +126,12 @@ http://localhost:8080/swagger/
 
 ### Beego 架构
 Beego架构图如(Beegode 八大独立的模块):
-![](https://gitlab.com/ymg_learn/go_sqllite_learn/blob/master/api/997599-20180321233004672-238888081.png)
 
+```
+997599-20180321233004672-238888081.png
+```
 Beego的执行逻辑，beego 是一个典型的 MVC 架构
 Beego架构图如(Beegode 八大独立的模块):
-![](https://gitlab.com/ymg_learn/go_sqllite_learn/blob/master/api/997599-20180321233021296-480972597.png)
-
+```
+997599-20180321233021296-480972597.png
+```

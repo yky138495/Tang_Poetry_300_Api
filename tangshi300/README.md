@@ -126,7 +126,7 @@ http://localhost:8080/swagger/
 
 ### Beego 架构
 Beego架构图如(Beegode 八大独立的模块):
-
+![](https://github.com/yky138495/Tang_Poetry_300_Api/blob/master/tangshi300/997599-20180321233004672-238888081.png?raw=true)
 ```
 997599-20180321233004672-238888081.png
 ```

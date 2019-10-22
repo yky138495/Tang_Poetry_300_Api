@@ -132,6 +132,7 @@ Beego架构图如(Beegode 八大独立的模块):
 ```
 Beego的执行逻辑，beego 是一个典型的 MVC 架构
 Beego架构图如(Beegode 八大独立的模块):
+![](https://github.com/yky138495/Tang_Poetry_300_Api/blob/master/tangshi300/997599-20180321233021296-480972597.png?raw=true)
 ```
 997599-20180321233021296-480972597.png
 ```
